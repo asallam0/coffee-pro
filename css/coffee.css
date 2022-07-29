@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: .1rem solid rgba(255, 255, 255, .3);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+.navbar {
+    background-color: var(--bg);
+    border-bottom: .05px solid var(--main-color)
+}
+
+#search-btn {
+    cursor: pointer;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+    background: linear-gradient(to right, #d3ad7f 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    background-position: 0 0;
+    transition: 1s;
+}
+
+.con {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.con #search-btn:hover,
+#card-btn:hover {
+    color: var(--main-color);
+}
+
+.landing {
+    min-height: calc(100vh - 72px);
+    background: url(../images/home-img.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.search-form {
+    background-color: #fff;
+    font-size: 13px;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    color: var(--black);
+}
+
+.icon:hover {
+    color: var(--main-color);
+}
+
+.gg {
+    height: 100px;
+}
+
+.content h1 {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.content p {
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.btn {
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+    transition: .2s;
+    border: none;
+    border-radius: 0%;
+}
+
+.btn:hover {
+    letter-spacing: .2rem;
+    background: var(--main-color);
+    color: #fff;
+}
+
+.cart-items-container {
+    position: absolute;
+    top: 80px;
+    min-height: calc(100vh - 72px);
+    width: 20rem;
+    background: #fff;
+    padding: 0 1.5rem;
+}
+
+.cart-items-container .cart-item {
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.cart-item div {
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+.cart-item :hover {
+    color: var(--main-color);
+}
+
+.cart-items-container .cart-item img {
+    height: 3rem;
+}
+
+.cart-items-container .cart-item .content h3 {
+    font-size: 1rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.cart-items-container .cart-item .content .price {
+    font-size: .5rem;
+    color: var(--main-color);
+}
+
+.cart-items-container .btn {
+    width: 100%;
+    text-align: center;
+}
+
+.about .row {
+    background-color: var(--black);
+}
+
+h1 span {
+    color: var(--main-color);
+}
+
+.box {
+    border: 1px solid rgba(255, 255, 255, .3);
+}
+
+.box .price span {
+    font-size: .8rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box:hover {
+    background: #fff;
+}
+
+.box:hover>* {
+    color: var(--black);
+}
+
+.boxes h3 {
+    font-size: 1.2rem;
+}
+
+.icons .i {
+    font-size: 1.5rem;
+    border: .1rem solid rgba(255, 255, 255, .3);
+    color: #fff;
+    margin: .3rem;
+    cursor: pointer;
+}
+
+.icons .i:hover {
+    background: var(--main-color);
+}
+
+.box .stars .i {
+    font-size: 1rem;
+    color: var(--main-color);
+}
+
+.contact .row {
+    background: var(--black);
+}
+
+.contact .row .map {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form .inputBox {
+    background: var(--bg);
+    border: var(--border);
+}
+
+.contact .row form .inputBox .i {
+    font-size: 1.5rem;
+}
+
+.contact .row form .inputBox input {
+    background: none;
+}
+
+.blogs .cart {
+    border: var(--border);
+}
+
+.blogs .par {
+    color: var(--main-color);
+}
+
+.blogs .image:hover {
+    transform: scale(1.2);
+}
+
+.footer {
+    background: var(--black);
+}
+
+.footer .share .i {
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer .share .i:hover {
+    color: var(--main-color);
+}
+
+.footer .credit span {
+    color: var(--main-color);
+}
